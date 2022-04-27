@@ -5,7 +5,8 @@ const port = 3000//local host:3000
 
 
 //dentro de la diagonal puedo poner la url
-app.get('/', (req,res)=> {
+// localhost:3000/Launchx
+app.get('/Launchx', (req,res)=> {
     res.send("Hola a todosss, hola devs")
 })
 
@@ -16,3 +17,4 @@ app.listen(port, ()=>{
 //Ahora puedo hacer en la terminar "  node app.js  " y debe aparecer "Server Listo!"
 
 // en el navegador pongo "localhost:3000"
+// si hago cambios, tengo que salir de la ejecucion de node, guardar mis archivos y volver a correr node app.js y refresh a la page
